@@ -26,17 +26,16 @@
 	#login>a { text-decoration: none; color: black; }
 	#login>a:visited { color: black; font-weight: bolder; }
 	#login {
-		width: 1000px; height: 30px;
+		background-color: pink;
+		/* display: inline-block; */
+		width: 1200px; height: 30px;
 		line-height: 30px;
-		text-align: right;
-		margin-top: 0px auto;
-		background-color: #FFCD28;
-		float: left;
+		margin: 0 auto;
 		font-size: 12px;
+		text-align: right;
 	}
 </style>
 <style type="text/css">
-	/* 헤드메뉴 */
 	#menu_wrap {
 		width: 1200px;
 		margin: 0 auto;
@@ -74,22 +73,18 @@
 	.sub>li {
 		height: 40px;
 		line-height: 40px;
+		list-style: none;
+		margin: 0px; padding: 0px;
 	}
 	.sub>li a {
 		margin: 0px;
-		color: gray;
 		background: white;
-		text-decoration: none;
 		font-size: 13px;
 	}
 	.sub>li a:hover {
 		color: black;
 		background: #FAFAD2;
 		border: none;
-	}
-	ul, li {
-		list-style: none;
-		margin: 0px; padding: 0px;
 	}
 	#logo>a {
 		background-color: white;

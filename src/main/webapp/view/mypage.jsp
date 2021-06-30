@@ -25,46 +25,99 @@
 		left: 0px;
 		position: fixed;
 	}
-	#side_nav {
+	#container {
 		width: 1200px; height: 700px;
 		margin: 50px auto;
-	/* 	border: 1px solid black;  */
+	/* 	border: 1px solid black; */
+		display: block;
 	}
-	table, th, td {
-		border: 1px solid #c8c8c8;
-		border-collapse: collapse;
+	#leftmenu {
+		width: 200px; 
+		background-color: white;
+		list-style-type: none;
+		margin: 0; padding: 0;
+		border: 1px solid #969696;
+		float: left;
 	}
-	table {
-		width: 200px;
-		height: 300px;
+	#leftmenu li {
+		border-bottom: 1px solid #969696;
 	}
-	th {
-		background-color: #FFCD28;
-		font-size: 18px;
+	#leftmenu li:last-child {
+		border-bottom: none;
 	}
-	td {
-		font-size: 15px;
-		padding-left: 5px;
-	}
-	a {
+	#leftmenu a {
+		display: block;
+		height: 20px;
+		line-height: 20px;
 		color: gray;
+		padding: 15px;
 		text-decoration: none;
 	}
-	a:visited {	color: gray; }
-	a:hover { color: #FFB914; }
+	#leftmenu a:hover {	color: #d2d2d2; background-color: rgb(248,248,248); }
+	#leftmenu a.current {	/* 현재 메뉴 위치 표시 */
+		background: #d2d2d2;
+		color: black;
+		font-weight: bold;
+	}
+	#leftmenu a:hover:not(.current) {	
+		color: gray;
+		background-color: rgb(248,248,248);
+	}
+	#leftmenu a:visited { color: gray; }
+	#page_subject {
+		text-align: center;
+		font-size: 20px;
+		font-weight: bold;
+		background-color: #FFCD28;
+		height: 100px;
+		line-height: 100px;
+	}
+	#sub_contents { 
+		float: right;
+		width: 900px; 
+		background:#ffffff; 
+ 		-webkit-box-sizing:border-box; 
+		-moz-box-sizing:border-box; 
+		box-sizing:border-box; 
+	/* 	border: 1px solid black; */
+	}
+	#sub_contents #sub_title { 
+		position:relative; 
+	}
+	#hr1 {
+		width: 920px;
+		height: 1px;
+		border: 0px;
+		background-color: #c8c8c8;
+		float: right;
+	}
 </style>
 </head>
 <body>
 <%@ include file="page_header.jsp" %>
 
-	<div id="side_nav">
-		<table id="nav">
-			<th style="height: 40%">마이페이지</th>
-			<tr> <td style="height: 15%"><a href="my_modify">회원정보 수정</a></td> </tr>
-			<tr> <td style="height: 15%"><a href="my_adopt">입양 진행 현황</a></td> </tr>
-			<tr> <td style="height: 15%"><a href="my_volunteer">봉사 신청 현황</a></td> </tr>
-			<tr> <td style="height: 15%"><a href="my_board">나의 글 확인</a></td> </tr>
-		</table>
+	<div id="container">
+			
+		<ul id="leftmenu">
+			<li id="page_subject">마이페이지</li>
+			<li><a href="my_modify.jsp">회원정보 수정</a></li>					
+			<li><a href="my_adopt.jsp">입양 진행 현황</a></li>
+			<li><a href="my_volunteer.jsp" >봉사 신청 현황</a></li>
+			<li><a href="my_board.jsp" >나의 글 확인</a></li>
+		</ul>
+
+		
+		<div id="sub_contents">
+			<section id="sub_title">
+			<h3>회원정보 수정</h3>	
+			</section>
+		</div>
+		
+		<hr id="hr1">
+		
+		<div>
+		
+		</div>
 	</div>
 	
 	

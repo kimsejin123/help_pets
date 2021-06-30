@@ -86,8 +86,8 @@
 	#login_go>a:visited { color: black; font-weight: bolder; }
 	#login_go {
 		display: block;
-		width: 200px; height: 40px;
-		line-height: 40px;
+		width: 150px; height: 30px;
+		line-height: 30px;
 		text-align: center;
 		margin-right: 100px;
 		margin-top: 10px;
@@ -95,17 +95,16 @@
 		border: 2px solid #FFB914;
 		border-radius: 2em;
 		float: right;
-		font-size: 14px;
-		
+		font-size: 12px;
 	}
 </style>
 </head>
 <body>
+	<div id="login_go">
+		<!-- 원래는 컨트롤러를 통해서 이동해야함 -->
+		<a href="login.jsp">로그인</a>&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;<a href="join.jsp">회원가입</a>
+	</div>
 	<div id="header">
-		<div id="login_go">
-			<!-- 원래는 컨트롤러를 통해서 이동해야함 -->
-			<a href="login.jsp">로그인</a>&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;<a href="join.jsp">회원가입</a>
-		</div>
 		
 		<div id="logo" style="text-align: center;">
 			<a href="main.jsp"><img alt="logo" src="../icon_images/logo_1.PNG"></a>

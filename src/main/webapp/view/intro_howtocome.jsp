@@ -28,7 +28,7 @@
 	#container {
 		width: 1200px; height: 700px;
 		margin: 50px auto;
-	/* 	border: 1px solid black; */
+		border: 1px solid black;
 		display: block;
 	}
 	#leftmenu {
@@ -91,6 +91,10 @@
 		background-color: #c8c8c8;
 		float: right;
 	}
+	#map {
+		margin-top: 50px;
+		float: right;
+	}
 </style>
 </head>
 <body>
@@ -99,21 +103,41 @@
 	<div id="container">
 			
 		<ul id="leftmenu">
-			<li id="page_subject">마이페이지</li>
-			<li><a href="my_modify.jsp">회원정보 수정</a></li>					
-			<li><a href="my_adopt.jsp">입양 진행 현황</a></li>
-			<li><a href="my_volunteer.jsp" >봉사 신청 현황</a></li>
-			<li><a href="my_board.jsp" >나의 글 확인</a></li>
+			<li id="page_subject">보호소 소개</li>
+			<li><a href="intro.jsp">소개말</a></li>					
+			<li><a href="intro_howtocome.jsp">오시는 길</a></li>
 		</ul>
 
 		
 		<div id="sub_contents">
 			<section id="sub_title">
-			<h3>입양 진행 현황</h3>	
+			<h3>보호소 오시는 길</h3>	
 			</section>
 		</div>
 		
 		<hr id="hr1">
+		
+		<div id="map">
+		<!-- * 카카오맵 - 지도퍼가기 -->
+		<!-- 1. 지도 노드 -->
+		<div id="daumRoughmapContainer1625050336433" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+		
+		<!--
+			2. 설치 스크립트
+			* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+		-->
+		<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+		
+		<!-- 3. 실행 스크립트 -->
+		<script charset="UTF-8">
+			new daum.roughmap.Lander({
+				"timestamp" : "1625050336433",
+				"key" : "26fx4",
+				"mapWidth" : "640",
+				"mapHeight" : "360"
+			}).render();
+		</script>
+		</div>
 		
 	</div>
 	
@@ -121,4 +145,5 @@
 	
 <%@ include file="footer.jsp" %>
 </body>
+
 </html>
