@@ -97,7 +97,7 @@
 		float: right;
 		font-size: 12px;
 	}
-</style>
+</style> 
 </head>
 <body>
 	<div id="login_go">
@@ -114,8 +114,8 @@
 			<ul class="main">
 				<li><a href="#">보호소소개</a>
 					<ul class="sub">
-						<li><a href="intro">소개말</a></li>
-						<li><a href="intro">오시는길</a></li>
+						<li><a href="intro.jsp">소개말</a></li>
+						<li><a href="intro_location.jsp">오시는길</a></li>
 					</ul>
 				</li>
 				<li><a href="#">입양안내</a>

@@ -34,7 +34,7 @@
 		padding: 13px;
 		background-color: #FFCD28;
 		border: 1px solid #FFB914;
-	}
+	} 
 	#sub {
 		font-size: 13px;
 	}
@@ -56,11 +56,15 @@
 	
 	<div>
 		<form id="find_form" action="" method="post">
+			<!-- h3 추가(샘) -->
+			<h3 style="text-align: center;">아이디 찾기</h3>
 			<div><input type="text" name="email" placeholder="이메일을 입력해주세요."></div><br>
 			<input type="submit" value="아이디 찾기" >
 		</form><br><br><br><br><br>
 		<hr align="center" style="width: 50%;">
 		<form id="find_form" action="" method="post">
+			<!-- h3 추가(샘) -->
+			<h3 style="text-align: center;">비밀번호 찾기</h3>
 			<div><input type="text" name="id" placeholder="아이디를 입력해주세요."></div><br>
 			<div><input type="password" name="pw" placeholder="비밀번호를 입력해주세요."></div><br>
 			<input type="submit" value="비밀번호 찾기" >
